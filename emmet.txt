@@ -1,0 +1,1 @@
+header#menu>nav>img+(ul>(li>a{Link $$})*5)+(main>(section>article>h2.titulo-h2{Título $$}+p>lorem)*4)+footer#sitemap>ul>(li>a:blank{link $$})*5
