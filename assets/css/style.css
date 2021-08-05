@@ -1,0 +1,25 @@
+/* RESET */
+:root {
+    --espacamento: 16px;
+    --cor-primaria: rgba(255,0,0,.5);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+header,
+main,
+footer {
+    padding: var(--espacamento);
+}
+
+h1, 
+h2 {
+    background-color: var(--cor-primaria);
+    margin: 24px 0px;
+    padding: 16px;
+    width: 640px;
+}
