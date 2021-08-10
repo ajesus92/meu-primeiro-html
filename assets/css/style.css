@@ -2,6 +2,7 @@
 /* RESET (ou Rezétti) */
 :root {
     --espacamento: 16px;
+    --fonte-primaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --cor-primaria: rgba(255,0,0,.5);
     --cor-secundaria: rgba(0,0,255,.5);
     --cor-secundaria-light: rgba(0,0,255,.15);
@@ -23,14 +24,10 @@ footer {
     background-color: var(--cor-primaria);
     margin: var(--espacamento) auto;
     padding: var(--espacamento);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 50%;
   }
   
   h2 {
-    background-color: var(--cor-secundaria);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
     margin: var(--espacamento) auto;
     padding: var(--espacamento);
     width: 100%;
@@ -46,16 +43,55 @@ footer {
   
   .promocoes {
       border: 2px solid var(--cor-primaria);
-      width: 100%;
+  }
+
+  .cta {
+      font-family: var(--fonte-primaria);
+      text-align: center;
+      font-weight: bolder;
+      color: black;
+      background-color: var(--cor-primaria);
+  }
+
+  .cta--intermediario {
+      margin: calc(var(--espacamento)*2) auto;
   }
 
   .btn {
-      background-color: var(--cor-primaria);
       border: 1px solid #000;
       border-radius: 0 calc(var(--espacamento)/4);
-      color: black;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-weight: bolder;
+      display: block;
+      margin: var(--espacamento) auto;
       padding: calc(var(--espacamento)/4) calc(var(--espacamento)/2);
       text-decoration: none;
+      width: max-content;
+  }
+
+  #LogoTopo {
+      border: 3px solid black;
+      border-radius: 50%;
+  }
+
+  #LogoTopo img {
+      transition: all .6s ease-out;
+  }
+
+  #LogoTopo:hover img {
+      transform: rotateY(360deg);
+  }
+
+  [href *="promo"] img {
+      width: 100%;
+  }
+
+  .categoria {
+    background-color: var(--cor-secundaria-light);
+  }
+
+  .categoria__produto {
+      border-radius: 4px;
+  }
+
+  .categoria__produto--promocao {
+      border: 4px solid var(--cor-secundaria);
   }
