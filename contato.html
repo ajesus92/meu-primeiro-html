@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Meu Primeiro HTML</title>
+  <meta name="description" content="Prática 01 do módulo de HTML e CSS">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    strong {
+      font-weight: 400
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a id="logoTopo" href="/" rel="noopener noreferrer" target="_blank" title="Ir para homepage">
+      <img src="https://mk0leanfrontierqpi7o.kinstacdn.com/wp-content/uploads/2018/12/logo-placeholder-png.png"
+        alt="Site Farmácia e Cia." width="80" height="auto">
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="sobre.html" title="Saiba mais sobre a Farmácia e Cia.">Sobre</a>
+        </li>
+        <li>
+          <a href="contato.html" title="Entre em contato com a Farmácia e Cia.">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- UPPERCASE
+  lowercase
+  camelCase - as 1as letras de cada palavra, a partir da 2a palavra, são maiúsculas | USADO PARA IDs
+  PascalCase - as 1as letras de cada palavra, a partir da 1a palavra, são maiúsculas
+  snake_case - separa palavras com underline (sublinhado)
+  kebab-case - separa palavras com hífens | USADO PARA CLASSES -->
+
+  <main>
+    <h1>FARMÁCIA E CIA.</h1>
+    <section>
+      <h2>Fale Conosco</h2>
+      <form>
+        <div class="col-auto">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+        <div class="col-auto">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </div>
+        <div class="col-auto">
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required>
+        </div>
+        <div class="col-auto">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows=10 cols=30></textarea>
+        </div>
+        <div class="col-auto">
+          <button class="btn" type="reset">Limpar</button>
+          <button class="btn" type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Farmácia e Cia. <sup>&copy;</sup> | Desde 1899</p>
+  </footer>
+</body>
+
+</html>
